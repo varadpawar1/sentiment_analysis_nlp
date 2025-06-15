@@ -51,16 +51,19 @@ Logistic Regression with `class_weight='balanced'` achieved the best class balan
 ## 📈 Visual Results
 
 ### 📊 Sentiment Distribution (Training Set)
-![Bar Plot](outputs/charts/sentiment_distribution_barplot.png)
+![Bar Plot](outputs/sentiment_distribution_barplot.png)
 
 ### 📆 Monthly Sentiment Trends (Unlabeled Data)
-![Line Chart](outputs/charts/sentiment_distribution_lineplot.png)
+![Line Chart](outputs/sentiment_distribution_lineplot.png)
 
 ### 🤖 Confusion Matrix – Logistic Regression
-![Confusion Matrix LR](outputs/charts/confusion_matrix_lr.png)
+![Confusion Matrix LR](outputs/confusion_matrix_lr.png)
 
 ### 🤖 Confusion Matrix – XGBoost
-![Confusion Matrix XGB](outputs/charts/confusion_matrix_xgb.png)
+![Confusion Matrix XGB](outputs/confusion_matrix_xgb.png)
+
+### 🤖 Confusion Matrix – Naive Bayes
+![Confusion Matrix XGB](outputs/confusion_matrix_nb.png)
 
 ---
 
