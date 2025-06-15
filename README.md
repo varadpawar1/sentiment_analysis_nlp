@@ -12,22 +12,27 @@ To develop a robust multiclass sentiment classifier using machine learning and N
 
 ## 📦 Dataset
 
-- **Financial PhraseBank Dataset**
-  - Source: [Kaggle](https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news)
-  - Contains labeled financial headlines across 3 classes: Positive, Negative, Neutral.
+- **Financial PhraseBank Dataset**  
+  Source: [Kaggle](https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news)  
+  Contains labeled financial headlines across 3 classes: Positive, Negative, Neutral.
+
+- **Headlines Dataset**  
+  Source: News Archive  
+  Unlabeled financial headlines used for inference and trend analysis.
 
 ---
 
 ## 📊 Techniques Used
 
-- Text Preprocessing: lowercasing, punctuation removal, stopword handling
-- Feature Engineering: TF-IDF Vectorization
-- Supervised Learning Models:
-  - **Logistic Regression** (with class weights)
-  - **Multinomial Naive Bayes**
-  - **XGBoost Classifier**
-- Evaluation Metrics:
-  - Accuracy, Precision, Recall, F1-Score, Confusion Matrix
+- **Text Preprocessing**: lowercasing, punctuation removal, regex cleaning
+- **Feature Engineering**: TF-IDF Vectorization
+- **Supervised Learning Models**:
+  - ✅ Logistic Regression (with class weights)
+  - 📉 Multinomial Naive Bayes
+  - ⚡ XGBoost Classifier
+- **Evaluation Metrics**:
+  - Accuracy, Precision, Recall, F1-Score
+  - Confusion Matrix Visualization
 
 ---
 
@@ -39,24 +44,35 @@ To develop a robust multiclass sentiment classifier using machine learning and N
 | XGBoost Classifier  | 76%      | 0.68     | Strong Neutral recall   |
 | Naive Bayes         | 69%      | 0.48     | Overfitted to Neutral   |
 
-Logistic Regression with `class_weight='balanced'` achieved the best balance across all three sentiment classes and is recommended for production use.
+Logistic Regression with `class_weight='balanced'` achieved the best class balance and is recommended for deployment.
 
 ---
 
-### Sentiment Distribution
-![Bar Plot](outputs/sentiment_distribution_barplot.png)
+## 📈 Visual Results
 
-### Monthly Sentiment Trends
-![Line Chart](outputs/sentiment_distribution_lineplot.png)
+### 📊 Sentiment Distribution (Training Set)
+![Bar Plot](outputs/charts/sentiment_distribution_barplot.png)
+
+### 📆 Monthly Sentiment Trends (Unlabeled Data)
+![Line Chart](outputs/charts/sentiment_distribution_lineplot.png)
+
+### 🤖 Confusion Matrix – Logistic Regression
+![Confusion Matrix LR](outputs/charts/confusion_matrix_lr.png)
+
+### 🤖 Confusion Matrix – XGBoost
+![Confusion Matrix XGB](outputs/charts/confusion_matrix_xgb.png)
 
 ---
 
 ## 🛠️ Tools Used
 
 - **Languages**: Python
-- **Libraries**: scikit-learn, XGBoost, Pandas, Seaborn, Matplotlib
+- **Libraries**: scikit-learn, XGBoost, Pandas, Matplotlib, Seaborn
 - **ML Techniques**: TF-IDF, Logistic Regression, Naive Bayes, XGBoost
-- **Visualization**: Seaborn & Matplotlib
+- **Visualization**: Matplotlib & Seaborn
+- **Jupyter Notebooks** for exploration, modeling, and reporting
+
+---
 
 ## 📁 Folder Overview
 
