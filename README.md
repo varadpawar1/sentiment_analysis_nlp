@@ -50,7 +50,7 @@ Logistic Regression with `class_weight='balanced'` achieved the best class balan
 
 ## 📈 Visual Results
 
-### 📊 Sentiment Distribution (Training Set)
+### 📊 Sentiment Distribution ((Full Labeled Dataset))
 ![Bar Plot](outputs/sentiment_distribution_barplot.png)
 
 ### 📆 Monthly Sentiment Trends (Unlabeled Data)
